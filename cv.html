@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    #nm{
+        color: red;
+        font-weight: bolder;
+    }
+    #ad{
+        color: green;
+        font-weight: bolder;
+    }
+    #ma{
+        color: blue;
+        font-weight: bolder;
+    }
+    .header{
+        width: 800px;
+        position: relative;
+        margin: 6% auto;
+        background-color: aquamarine;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #nm{
+        font-size: 40px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bolder;
+    }
+    .edu{
+        padding-left: 10px;
+        text-align: left;
+        margin-top: 25px;
+    }
+    .ed{
+        padding: 0 0 0 20px;
+        line-height: 25px;
+    }
+    /* #univer{
+        list-style:disc;
+    } */
+    .degree{
+        font-weight: bold;
+        list-style: upper-alpha;
+    }
+    #cer, #cer2{
+        padding-left: 25px;
+    }
+    .skill{
+        padding-left: 10px;
+        text-align: left;
+        margin-top: 25px;
+    }
+    .key-skill{
+        padding: 0 0 0 20px;
+        line-height: 25px;
+    }
+
+
+
+    .working{
+        padding-left: 10px;
+        text-align: left;
+        margin-top: 25px;
+    }
+    .experience{
+        padding: 0 0 0 20px;
+        line-height: 25px;
+    }
+    .achieve{
+        padding-left: 10px;
+        text-align: left;
+        margin-top: 25px;
+    }
+    .achievement{
+        padding: 0 0 0 20px;
+        line-height: 25px;
+    }
+    .certifi{
+        padding-left: 10px;
+        text-align: left;
+        margin-top: 25px;
+    }
+    .certificate{
+        padding: 0 0 0 20px;
+        line-height: 25px;
+    }
+    .hob{
+        padding-left: 10px;
+        text-align: left;
+        margin-top: 25px;
+    }
+    .hobbies{
+        padding: 0 0 0 20px;
+        line-height: 25px;
+    }
+</style>
+<body>
+    
+    <div class="conatainer">
+
+        <div></div>
+    <div class="form-box">
+        <header>AUTOMATED CURICULUM VITAE</header>
+        <h3>Personal Data:</h3>         
+        <input type="text" class="input-text" id="name" placeholder="Enter Your Full Name">
+        <input type="text" class="input-text" id="address" placeholder="Enter Your Address">
+        <input type="number" class="input-text" id="phone-no" placeholder="Enter Your Phone Number">
+        <input type="text" class="input-text" id="email" placeholder="Enter Your E-mail">
+        <!-- <h3>Profile:</h3>
+        <input type="text" class="input-text" id="" placeholder=""> -->
+        <h3>Education:</h3>         
+        <input type="text" class="input-text" id="uni" placeholder="Institution with date">
+        <input type="text" class="input-text" id="deg" placeholder="Degree Awarded">
+        <input type="text" class="input-text" id="sec" placeholder="Institution with date">
+        <input type="text" class="input-text" id="deg2" placeholder="Degree Awarded">
+        <h3>Key Skills:</h3>
+        <input type="text" class="input-text" id="skill1" placeholder="1)">
+        <input type="text" class="input-text" id="skill2" placeholder="2)">
+        <input type="text" class="input-text" id="skill3" placeholder="3)">
+        <input type="text" class="input-text" id="skill4" placeholder="4)">
+        <input type="text" class="input-text" id="skill5" placeholder="5)">
+        <h3>Working Experience:</h3>
+        <input type="text" class="input-text" id="working1" placeholder="1)">
+        <input type="text" class="input-text" id="working2" placeholder="2)">
+        <input type="text" class="input-text" id="working3" placeholder="3)">
+        <input type="text" class="input-text" id="working4" placeholder="4)">
+        <input type="text" class="input-text" id="working5" placeholder="5)">
+        <h3>Achievements and Responsibilites:</h3>
+        <input type="text" class="input-text" id="achiev1" placeholder="1)">
+        <input type="text" class="input-text" id="achiev2" placeholder="2)">
+        <input type="text" class="input-text" id="achiev3" placeholder="3)">
+        <input type="text" class="input-text" id="achiev4" placeholder="4)">
+        <input type="text" class="input-text" id="achiev5" placeholder="5)">
+        <h3>Professional Certificate:</h3>
+        <input type="text" class="input-text" id="profe1" placeholder="1)">
+        <input type="text" class="input-text" id="profe2" placeholder="2)">
+        <input type="text" class="input-text" id="profe3" placeholder="3)">
+        <input type="text" class="input-text" id="profe4" placeholder="4)">
+        <input type="text" class="input-text" id="profe5" placeholder="5)">
+        
+        <h3>Hobbies & Interest</h3>         
+        <input type="text" class="input-text" id="hobbies1" placeholder="1)">
+        <input type="text" class="input-text" id="hobbies2" placeholder="2)">
+        <input type="text" class="input-text" id="hobbies3" placeholder="3)">
+        
+
+    <div class="btn-box">
+        <button class="btn">Generate CV</button>
+    </div>
+
+    </div>
+
+    <!-- <div class="header">
+        <p id="nm"></p>
+        <p id="ad"></p>
+        <p id="number"></p>
+        <p id="ma"></p>
+    <div class="edu">
+        <div>
+            <h3>Education</h3>
+        </div>
+        <div class="ed">
+        <p id="univer"></p>
+        <p id="secon"></p><br>
+        <p class="degree">Degree Awarded:</p>
+        <p id="cer"></p>
+        <p id="cer2"></p>
+        </div>
+    </div>
+    <div class="skill">
+        <div>
+            <h3>Key Skills</h3>
+        </div>
+        <div class="key-skill">
+        <p id="skill1">Ability to combine multiple challenges task</p>
+        <p id="skill2">Certified palletization and tie down</p>
+        <p id="skill3">Airside driving skill</p>
+        <p id="skill4">Certified c2k</p>
+        <p id="skill5">Dangerous Goods Regulation</p>
+        </div>
+    </div>
+
+    <div class="working">
+        <div>
+            <h3>Working Experience</h3>
+        </div>
+        <div class="experience">
+        <p id="wk1">Ability to combine multiple challenges task</p>
+        <p id="wk2">Certified palletization and tie down</p>
+        <p id="wk3">Airside driving skill</p>
+        <p id="wk4">Certified c2k</p>
+        <p id="wk5">Dangerous Goods Regulation</p>
+        </div>
+    </div>
+
+    <div class="achieve">
+        <div>
+            <h3>Achievements and Responsibilites</h3>
+        </div>
+        <div class="achievement">
+        <p id="ar1">Ability to combine multiple challenges task</p>
+        <p id="ar2">Certified palletization and tie down</p>
+        <p id="ar3">Airside driving skill</p>
+        <p id="ar4">Certified c2k</p>
+        <p id="ar5">Dangerous Goods Regulation</p>
+        </div>
+    </div>
+
+    <div class="certifi">
+        <div>
+            <h3>Professional Certificate</h3>
+        </div>
+        <div class="certificate">
+        <p id="pc1">Ability to combine multiple challenges task</p>
+        <p id="pc2">Certified palletization and tie down</p>
+        <p id="pc3">Airside driving skill</p>
+        <p id="pc4">Certified c2k</p>
+        <p id="pc5">Dangerous Goods Regulation</p>
+        </div>
+    </div>
+
+    <div class="hob">
+        <div>
+            <h3>Hobbies & Interest</h3>
+        </div>
+        <div class="hobbies">
+        <p id="hob1">Ability to combine multiple challenges task</p>
+        <p id="hob2">Certified palletization and tie down</p>
+        <p id="hob3">Airside driving skill</p>
+        </div>
+    </div>
+    </div> -->
+
+    </div>
+
+    
+
+    <script src="js/cv.js"></script>
+</body>
+</html>
