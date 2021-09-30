@@ -1,6 +1,14 @@
 const generateCv = document.querySelector(".btnGenerate")
 
 function myCv(){
+    document.getElementById("btnEdu").style.display = "none"
+    document.getElementById("btnWork").style.display = "none"
+    document.getElementById("btnSkill").style.display = "none"
+    document.getElementById("btnCert").style.display = "none"
+    document.querySelector(".btnGenerate").style.display="none"
+     document.querySelector(".btnDownload").style.display="block"
+
+
     //alert("Thanks!!!")
     // Personal Data Input
      let fullname = document.querySelector(".name").value
@@ -9,7 +17,7 @@ function myCv(){
      let mail = document.querySelector(".email").value
 
      // Personal Data Output
-     document.querySelector(".pp").innerHTML=""
+     //document.querySelector(".pp").innerHTML=""
      document.getElementById("name").innerHTML = fullname;
      document.getElementById("address").innerHTML = addres;
      document.getElementById("phone-no").innerHTML = pno;
@@ -41,6 +49,7 @@ function myCv(){
      document.getElementById("terDg1").innerHTML = ter3;
      document.getElementById("terStartYr").innerHTML = ter4;
      document.getElementById("terEndYr").innerHTML = ter5;
+    
 
 
      //Secondary Input value
@@ -57,20 +66,24 @@ function myCv(){
      document.getElementById("secStartYr").innerHTML = sec4;
      document.getElementById("secEndYr").innerHTML = sec5;
      
-
-
-
-     //Working Experience
-     let work1 = document.querySelector(".ter1").value
-     let work2 = document.querySelector(".terAddr1").value
-     let work3 = document.querySelector(".terDg1").value
-     let work4 = document.querySelector(".terStartYr").value
-     let work5 = document.querySelector(".terEndYr").value
+     
 
 
      
-     document.querySelector(".btnGenerate").style.display="none"
-     document.querySelector(".btnDownload").style.display="block"
+     //Working Experience
+    //  let work1 = document.querySelector(".ter1").value
+    //  let work2 = document.querySelector(".terAddr1").value
+    //  let work3 = document.querySelector(".terDg1").value
+    //  let work4 = document.querySelector(".terStartYr").value
+    //  let work5 = document.querySelector(".terEndYr").value
+
+
+    //Summary Input
+     let summ = document.querySelector(".summary").value;
+
+     //Summary Output
+     document.getElementById("summary").innerHTML = summ;
+     
 }
 generateCv.addEventListener('click',myCv);
 
@@ -78,10 +91,12 @@ generateCv.addEventListener('click',myCv);
 
 
 //Working Experience Creation Form
+let i;
+let workEx;
 let workAdd = document.getElementById("btnWork")
 function workExpForm(){
-    let workEx = prompt("How many work experience do you have?")
-    for(let i = 0; i < workEx; i++){
+    workEx = prompt("How many work experience do you have?")
+    for(i = 0; i < workEx; i++){
         let add = i + 1;
         //console.log(add)
 
@@ -124,6 +139,57 @@ function workExpForm(){
 workAdd.addEventListener('click',workExpForm)
 
 
+
+//Key Skills Creation Form
+let k;
+let keySkill;
+let skillAdd = document.getElementById("btnSkill")
+function skillForm(){
+    keySkill = prompt("How many skills do you have?")
+    for(k = 0; k < keySkill; k++){
+        let ad = k + 1;
+        //console.log(add)
+
+        //Create Filed for Title
+        let kkk = document.getElementById("skil")
+        let kekS = document.getElementById("key")
+        let inputSkill = document.createElement("input")
+        inputSkill.setAttribute("type","text")
+        inputSkill.setAttribute("class","keySkills"+ad++)
+        inputSkill.setAttribute("id","details")
+        inputSkill.setAttribute("placeholder","Enter Your skills here?")
+        kkk.appendChild(kekS)
+        kekS.appendChild(inputSkill)
+        console.log(kekS)
+        console.log(inputSkill)
+        console.log(kkk)
+
+        //Create filed for Start year
+        // let wkSyrs = document.getElementById("workStartYr2") 
+        // let startyr = document.createElement("input")
+        // startyr.setAttribute("type","text")
+        // startyr.setAttribute("class","strYr"+add++)
+        // startyr.setAttribute("id","details")
+        // startyr.setAttribute("placeholder","Start Year")
+        // startyr.setAttribute("style","width:150px")
+        // wkSyrs.appendChild(startyr)
+
+        // //Create filed for End year
+        // let wkEyrs = document.getElementById("workEndYr") 
+        // let endyr = document.createElement("input")
+        // endyr.setAttribute("type","text")
+        // endyr.setAttribute("class","endYr"+add++)
+        // endyr.setAttribute("id","details")
+        // endyr.setAttribute("placeholder","End Year")
+        // endyr.setAttribute("style","width:150px")
+        // wkEyrs.appendChild(endyr)
+        // console.log(wkEyrs)
+        // console.log(endyr)
+    //    let formCreate = document.getElementById("workEndYr") 
+    }
+}
+
+skillAdd.addEventListener('click',skillForm)
 
 
 
